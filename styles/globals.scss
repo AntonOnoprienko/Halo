@@ -1,0 +1,106 @@
+* {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  font-family: 'Poppins';
+  height: 100vh;
+  font-size: 100vh;
+  line-height: 1;
+  font-size: 18px;
+  color: #1E1A20;
+  -ms-text-size-adjust: 100vh;
+  -moz-text-size-adjust: 100vh;
+  -webkit-text-size-adjust: 100vh;
+
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------------------------*/
+
+[class*="__container"]{
+	max-width: 1150px;
+	margin: 0 auto;
+	
+}
+
+@media (max-width:1149.98px) {
+	[class*="__container"]{
+		max-width: 970px;
+	}
+}
+@media (max-width:990.98px) {
+	[class*="__container"]{
+		max-width: 750px;
+	}
+}
+@media (max-width:767.98px) {
+	[class*="__container"]{
+		max-width: 500px;
+	}
+}
+
+@media (max-width:500.98px) {
+	[class*="__container"]{
+		max-width: 375px;
+	}
+}
+
+@media (max-width:374.98px) {
+	[class*="__container"]{
+		max-width: none;
+		padding: 0 15px;
+	}
+}
