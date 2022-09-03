@@ -19,14 +19,14 @@ a:focus, a:active {
 
 html, body {
   font-family: 'Poppins';
-  height: 100vh;
-  font-size: 100vh;
+  height: 100%;
+  font-size: 100%;
   line-height: 1;
   font-size: 18px;
   color: #1E1A20;
-  -ms-text-size-adjust: 100vh;
-  -moz-text-size-adjust: 100vh;
-  -webkit-text-size-adjust: 100vh;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 
 }
 
@@ -94,13 +94,19 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width:500.98px) {
 	[class*="__container"]{
-		max-width: 375px;
+		max-width: 400px;
 	}
 }
 
-@media (max-width:374.98px) {
+@media (max-width:399.98px) {
 	[class*="__container"]{
 		max-width: none;
 		padding: 0 15px;
 	}
+}
+@media (max-width:399.98px) {
+	[class*="news__wrapper"]{
+		display: flex;
+		flex-direction: column;
+}
 }

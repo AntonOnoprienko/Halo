@@ -4,6 +4,7 @@ import { FirstPageComponent } from './FirstPageComponent'
 import HeaderComponent from './HeaderComponent'
 import { NewsComponent } from './NewsComponent'
 import { NewsItemComponent } from './NewsItemComponent'
+import { SliderComponent } from './SliderComponent'
 
 export const ContentComponent = () => {
 	return (
@@ -17,6 +18,7 @@ export const ContentComponent = () => {
 				<div className={classes.page + '__container'}>
 					<FirstPageComponent />
 					<NewsComponent />
+					<SliderComponent />
 				</div> 
 				</main>
 			<footer className={classes.footer + '__container'}>FOOTER</footer>
