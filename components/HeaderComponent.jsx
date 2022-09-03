@@ -1,5 +1,5 @@
 import Image from "next/image";
-import classes from "../styles/mainClasses.module.scss"
+import classes from "../styles/header.module.scss"
 
 const HeaderComponent = () => {
 	return (
@@ -7,7 +7,7 @@ const HeaderComponent = () => {
 
 			<Image src='/logo.png' alt='logo' width='116px' height='37px' />
 
-			<div className={classes.menu__items}>
+			<div className={classes.header__menu_items}>
 				<b><span>Home</span></b>
 				<span>Our mission</span>
 				<span>Places</span>

@@ -1,27 +1,43 @@
 import React from 'react'
-import classes from "../styles/mainClasses.module.scss"
+import classes from "../styles/firstpage.module.scss"
 import Image from 'next/image'
+import parot from '../public/Parrot.png'
+import headline from '../public/Headline.png'
+import card from '../public/Table.png'
+
+
+
 export const FirstPageComponent = () => {
-  return (
-	  <div className={classes.firstPage}>
+	return (
+
+	  	
+		 <div className={classes.firstPage}>
+		  
 		  <div className={classes.firstPage__leftSide}>
-			  <Image src="/Headline.png" alt="headline" width='550px' height='300px'/>
-			  <div className={classes.firstPage__text}>The scale of the challenges facing our planet can seem daunting, but we can all do something.</div>
-			  <div className={classes.firstPage__target_button_wrapper}>
-				  <div className={classes.firstPage__target_button_text}>
-					  <Image src='/Vector.png' alt='target' width="14px" height="20px"/>
-					  <p style={{ marginLeft: '10px' }}>Find the place to help</p>
-				  </div>
-				  <div className={classes.firstPage__target_button}>
-					  <span>SEARCH</span>
-				  </div>
+			  
+			  <Image src={headline} alt="headline" width='540px' height='290px' placeholder='blur'/>
+
+			  <div className={classes.firstPage__text}>
+				  The scale of the challenges facing our planet can seem daunting, but we can all do something.
 			  </div>
+
+			  <div className={classes.firstPage__target_button_wrapper}>
+				 <div className={classes.firstPage__target_button_text}>
+				 	<Image src='/Vector.png' alt='target' width="14px" height="20px"/>
+				 	<p style={{ marginLeft: '10px' }}>Find the place to help</p>
+				 </div>
+				 <div className={classes.firstPage__target_button}>
+					<span>SEARCH</span>
+				 </div>
+				  
+			  </div>
+
 		  </div>
 		  <div className={classes.firstPage__rightSide}>
-			  <Image src="/Parrot.png" alt='parrot' width='460px' height='565px' />
-			  <Image src="/Table.png" alt='cart' width="300px" height="350wpx" />
+			  <div className={classes.firstPage__rightSide_parrot}><Image  src={parot} alt='parrot' width={460} height={565} placeholder='blur' /></div>
+			  <div className={classes.firstPage__rightSide_table}><Image  src={card} alt='cart' width={270} height={320} placeholder='blur'/></div>
 		  </div>
 		  
-	 </div>
+			</div>
   )
 }
