@@ -3,6 +3,7 @@ import classes from "../styles/mainClasses.module.scss"
 import { FirstPageComponent } from './FirstPageComponent'
 import { HeaderComponent } from './HeaderComponent'
 import { NewsComponent } from './NewsComponent'
+import { QuoteComponent } from './QuoteComponent'
 import { SliderComponent } from './SliderComponent'
 import { TeamComponent } from './TeamComponent'
 
@@ -20,6 +21,7 @@ export const ContentComponent = () => {
 					<NewsComponent />
 					<SliderComponent />
 					<TeamComponent />
+					<QuoteComponent />
 				</div> 
 				</main>
 			<footer className={classes.footer + '__container'}>FOOTER</footer>

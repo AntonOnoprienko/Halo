@@ -1,0 +1,40 @@
+.quote__wrapper{
+margin: 50px -80px;
+padding: 180px 130px;
+height: 100%;
+background: url('/bcg.png') 0 0/100% no-repeat;
+
+
+}
+.text{
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 64px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.border {
+	margin: 62px auto 0;
+	padding-top: 82px;
+	border-top: 4px solid #1E1A20;
+	max-width: 736px;
+} 
+.items {
+	max-width: 736px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.item{
+	display: flex;
+}
+.item_txt{
+	max-width: 120px;
+	max-height: 40px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: 20px;
+}
