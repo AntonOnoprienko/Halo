@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classes from "../styles/header.module.scss"
 
-const HeaderComponent = () => {
+export const HeaderComponent = () => {
 	return (
 		<div className={classes.header__content}>
 
@@ -22,4 +22,3 @@ const HeaderComponent = () => {
 	);
 }
 
-export default HeaderComponent;

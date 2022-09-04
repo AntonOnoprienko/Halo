@@ -29,6 +29,10 @@ html, body {
   -webkit-text-size-adjust: 100%;
 
 }
+header {
+	background-color: #F7F3F4
+;
+} 
 
 input, button, textarea {
   font-family: inherit;
@@ -71,8 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 /*---------------------------------------------*/
 
 [class*="__container"]{
-	max-width: 1150px;
+	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 100px;
 	
 }
 
@@ -84,11 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width:990.98px) {
 	[class*="__container"]{
 		max-width: 750px;
-	}
-}
-@media (max-width:767.98px) {
-	[class*="__container"]{
-		max-width: 500px;
 	}
 }
 
@@ -108,5 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 	[class*="news__wrapper"]{
 		display: flex;
 		flex-direction: column;
+	}
 }
+
+@media (max-width:600.98px) {
+	[class*="firstPage"]{
+		display: flex;
+		flex-direction: column;
+	}
 }
