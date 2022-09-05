@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import classes from '../styles/news.module.scss'
+import classes from '../../styles/news.module.scss'
 
 export const NewsItemComponent = (props) => {
   return (

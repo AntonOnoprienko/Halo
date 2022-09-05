@@ -1,12 +1,14 @@
 import React from 'react'
 import classes from "../styles/mainClasses.module.scss"
+import { ContactComponent } from './ContactComponent'
 import { FirstPageComponent } from './FirstPageComponent'
 import { HeaderComponent } from './HeaderComponent'
-import { NewsComponent } from './NewsComponent'
-import { QuoteComponent } from './QuoteComponent'
-import { SliderComponent } from './SliderComponent'
+import { NewsComponent } from './news/NewsComponent'
+import { QuoteComponent } from './quote/QuoteComponent'
+import { SliderComponent } from './slider/SliderComponent'
 import { TeamComponent } from './TeamComponent'
-
+import { FaqsComponent } from './faqs/FaqsComponent'
+import {FooterComponent} from './FooterComponent'
 export const ContentComponent = () => {
 	return (
 		<div className={classes.wrapper}>
@@ -22,9 +24,12 @@ export const ContentComponent = () => {
 					<SliderComponent />
 					<TeamComponent />
 					<QuoteComponent />
+					<ContactComponent />
+					<FaqsComponent />
+					<FooterComponent />
 				</div> 
-				</main>
-			<footer className={classes.footer + '__container'}>FOOTER</footer>
+			</main>
+			
 		</div>
 	 
   )

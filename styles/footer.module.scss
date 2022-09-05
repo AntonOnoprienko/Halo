@@ -1,0 +1,33 @@
+.footer__wrapper {
+	height: 330px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+} 
+
+.item_block {
+	width: 220px;
+} 
+
+.title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0.3px;
+	color: #333333;
+	mix-blend-mode: normal;
+	margin-bottom: 37px; 
+}
+.contacts {
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 48px;
+	margin-bottom: 32px; 
+ } 
+
+ .text {
+	font-size: 13px;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	color: #333333;
+ }

@@ -77,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 [class*="__container"]{
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 100px;
-	
+
+
 }
 
 @media (max-width:1149.98px) {
@@ -117,3 +117,4 @@ h1, h2, h3, h4, h5, h6 {
 		flex-direction: column;
 	}
 }
+

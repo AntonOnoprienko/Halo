@@ -1,6 +1,6 @@
 import React from 'react'
 import { NewsItemComponent } from './NewsItemComponent'
-import classes from '../styles/news.module.scss'
+import classes from '../../styles/news.module.scss'
 
 
 export const NewsComponent = () => {

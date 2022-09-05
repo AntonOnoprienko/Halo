@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, {useState} from 'react'
-import classes from '../styles/slider.module.scss'
+import classes from '../../styles/slider.module.scss'
 import { SliderContentComponent } from './SliderContentComponent'
 
 export const SliderComponent = () => {

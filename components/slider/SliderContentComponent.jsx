@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import classes from '../styles/slider.module.scss'
+import classes from '../../styles/slider.module.scss'
 
 export const SliderContentComponent = (props) => {
 	return (
