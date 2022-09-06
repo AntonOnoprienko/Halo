@@ -1,0 +1,45 @@
+.item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+.item_1 {
+	background-color:palevioletred;
+	
+} 
+.item_2 {
+	background-color: mediumseagreen;
+	
+} 
+.item_3 {
+	background-color:moccasin;
+
+} 
+
+.mainContainer {
+	margin: 0 auto;
+	height: 650px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: #FFBD9E;
+}
+
+.window{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.allPagesContainer{
+	height: 100%;
+	display: flex;
+	transition: translate;
+	transition-property: transform;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+}
+.arrow {
+	cursor: pointer;
+}
