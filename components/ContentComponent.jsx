@@ -17,7 +17,8 @@ export const ContentComponent = () => {
 	return (
 		<>
 		<Head>
-			<title> Halo lab </title>
+				<title> Halo lab </title>
+				<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 		</Head>
 			
 		<div className={classes.wrapper}>

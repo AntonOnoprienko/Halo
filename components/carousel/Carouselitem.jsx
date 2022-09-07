@@ -7,19 +7,28 @@ import classes from '../../styles/carousel.module.scss'
 
 
 export const CarouselItem = ({ children }) => {
-	const PAGE_WIDTH = 1200
+	const PAGE_WIDTH = 300
 	const [pages, setPages] = useState([])
 	const [offset, setOffset] = useState(0)
-	
+	const [counter, setCounter] = useState(3)
+	const rightChevronsOpacity = {opacity: counter === 5 ? '0.2' : '1' } 
+	const leftChevronsOpacity = {opacity: counter === 1 ? '0.2' : '1' } 
 	useEffect(() => { 
 		setPages(
 
 			Children.map(children, child => { 
 				return cloneElement(child, {
 					style: {
-						height: '100%',
-						minWidth: `${PAGE_WIDTH}px`,
-						maxWidth: `${PAGE_WIDTH}px`,
+						minWidth: '100%',
+						maxWidth: '100%',
+						minHeight: '100%',
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+						flex: '1 0 20%',
+						minWidth: '300px',
+						border: '1px solid purple',
+
 					},
 				}) 
 			} )
@@ -27,30 +36,47 @@ export const CarouselItem = ({ children }) => {
 	},[])
 
 	const handlerLeftArrowClick = () => { 
+		setCounter((currentCounter) => {
+			const newCounter = currentCounter - 1
+			if (newCounter <= 1) { 
+				return 1
+			}
+			return newCounter
+		})
 		setOffset((currentOffset) => { 
 			const newOffset = currentOffset + PAGE_WIDTH
 			console.log(newOffset)
-			return Math.min(newOffset,0)
+			return Math.min(newOffset,600)
 		})
 	}
 	const handlerRightArrowClick = () => {
+		setCounter((currentCounter) => {
+			const newCounter = currentCounter + 1
+			if (newCounter >= 5) { 
+				return 5
+			}
+			return newCounter
+		})
 		setOffset((currentOffset) => {
 			const newOffset = currentOffset - PAGE_WIDTH
-			const maxOffset = -(PAGE_WIDTH * (pages.length - 1))
-			console.log(newOffset,maxOffset)
-			return Math.max(newOffset,maxOffset)
+			return Math.max(newOffset,-600)
 		})
 	 }
 
   return (
 	  <div className={classes.mainContainer}>
-		  <FaChevronLeft className={classes.arrow} onClick={handlerLeftArrowClick} /> 
+		  
 		<div className = { classes.window } >
 			  <div className={classes.allPagesContainer} style={{transform: `translateX(${offset}px)`}}>
 				  {pages}
 			  </div>
-		</div>
-		<FaChevronRight className={classes.arrow} onClick={handlerRightArrowClick} />  
+			   
+		  </div>
+		  <div className={classes.chevrons}>
+			  <FaChevronLeft className={classes.arrow} onClick={handlerLeftArrowClick} style={leftChevronsOpacity} />
+			  {counter}  <span style={{ opacity: '0.2' }}>/  5</span> 
+			  <FaChevronRight className={classes.arrow} onClick={handlerRightArrowClick} style={rightChevronsOpacity} /> 
+			</div>
 	 </div>
   )
 }

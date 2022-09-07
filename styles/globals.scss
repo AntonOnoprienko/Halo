@@ -71,33 +71,35 @@ h1, h2, h3, h4, h5, h6 {
 /*---------------------------------------------*/
 
 [class*="__container"]{
-	max-width: 1200px;
+	max-width: 1120px;
 	margin: 0 auto;
+	border: 1px solid red;
 
 
 }
 
-@media (max-width:1149.98px) {
-	[class*="__container"]{
-		max-width: 970px;
-	}
-}
-@media (max-width:990.98px) {
-	[class*="__container"]{
-		max-width: 750px;
-	}
-}
 
-@media (max-width:500.98px) {
+
+@media (max-width:1250.98px) {
 	[class*="__container"]{
-		max-width: 400px;
+		max-width: 860px;
 	}
 }
 
-@media (max-width:399.98px) {
+@media (max-width:859.98px) {
+[class*="__container"]{
+		max-width: 600px;
+	}
+}
+@media (max-width:599.94px) {
+	[class*="__container"]{
+		max-width: 375px;
+	}
+}
+
+@media (max-width:375.98px) {
 	[class*="__container"]{
 		max-width: none;
-		padding: 0 15px;
 	}
 }
 @media (max-width:399.98px) {

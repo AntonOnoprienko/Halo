@@ -3,7 +3,7 @@ import classes from "../styles/header.module.scss"
 
 export const HeaderComponent = () => {
 	return (
-		<div className={classes.header__content}>
+		<div className={classes.header__wrapper}>
 
 			<Image src='/logo.png' alt='logo' width='116px' height='37px' />
 
