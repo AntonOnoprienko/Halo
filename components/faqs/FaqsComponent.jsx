@@ -13,7 +13,7 @@ export const FaqsComponent = () => {
 		  <div className={classes.faqs__right_block}>
 			  <FaqItemComponent title={'What can I do to protect our planet?'} text={'Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources'} />
 			  <FaqItemComponent title={'How to save nature ecology?'} text={'Some text about ecology!'} />
-			  <FaqItemComponent title={'What is nature conservation?'} text={'I like conservation from my grandma! onoprienkoanton@gmail.com'} />
+			  <FaqItemComponent title={'What is nature conservation?'} text={'I like conservation from my grandma! onoprienkoanton88@gmail.com'} />
 		  </div>
 	 </div>
   )
