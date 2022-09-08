@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import team from '../public/team.png'
+import teamBig from '../public/team.png'
+import teamSmall from '../public/teamSmall.png'
 import classes from '../styles/team.module.scss'
 
 
@@ -11,7 +12,12 @@ export const TeamComponent = () => {
 			  <p className={classes.title}>Our Top Team</p>
 			  <p className={classes.txt}>Learn more about how you can save our planet's nature. </p>
 		  </div>
-		  <Image src={team} width={1120} height={435} placeholder='blur' />
+		  <div className={classes.teamBig}>
+			  <Image src={teamBig} width={1120} height={435} placeholder='blur'  />
+		  </div>
+		  <div className={classes.teamSmall}>
+			  <Image src={teamSmall} width={350} height={605} placeholder="'blur"  />
+			  </div>
 	  </div>
   )
 }

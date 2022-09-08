@@ -20,7 +20,7 @@ export const FirstPageComponent = () => {
 			  			<div className={classes.firstPage__target_button_wrapper}>
 						  <div className={classes.firstPage__target_button_text}>
 						 	<Image src='/Vector.png' alt='target' width="14px" height="20px"/>
-						<input placeholder="Find the place to help" style={{padding: '0 10px'}}/>
+						<input placeholder="Find the place to help" style={{padding: '0 10px', width: '100%'}}/>
 				 		  </div>
 				 			<div className={classes.firstPage__target_button}>
 								<span>SEARCH</span>

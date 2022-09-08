@@ -101,18 +101,5 @@ h1, h2, h3, h4, h5, h6 {
 	[class*="__container"]{
 		max-width: none;
 	}
-}
-@media (max-width:399.98px) {
-	[class*="news__wrapper"]{
-		display: flex;
-		flex-direction: column;
-	}
-}
 
-@media (max-width:600.98px) {
-	[class*="firstPage"]{
-		display: flex;
-		flex-direction: column;
-	}
 }
-

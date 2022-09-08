@@ -6,8 +6,8 @@ export const ContactComponent = () => {
   return (
 	  <div className={classes.contact__wrapper}>
 		  <div className={classes.contact__text_wrapper}>
-			  <div className={classes.title}>Get Started Today!</div>
-			  <div className={classes.text}>Learn more about how you can save our planet's nature. From smart consumption to switching to renewable energy, each of us can do our part to save the planet. </div>
+			  <h1 className={classes.title}>Get Started Today!</h1>
+			  <p className={classes.text}>Learn more about how you can save our planet's nature. From smart consumption to switching to renewable energy, each of us can do our part to save the planet. </p>
 		  </div>
 		  <form>
 			  <div className={classes.contact__form_wrapper}>

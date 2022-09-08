@@ -33,3 +33,21 @@
 	text-decoration-line: underline;
 	color: #807C7C;
 }
+
+@media(max-width: 599.99px){
+.news__wrapper{
+	display: flex;
+	flex-direction: column;
+
+}
+.news__item{
+display: flex;
+align-items: center;
+margin: 10px 0;
+
+}
+.news__item_img{
+	width: 30%;
+}
+
+}

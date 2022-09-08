@@ -49,9 +49,9 @@ margin-right: -40px;
 	border-radius: 40px;	
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 .firstPage__target_button_text{
+	flex-basis: 70%;
 	font-size: 14px;
 	color: #807C7C;
 	display: flex;
@@ -68,6 +68,7 @@ margin-right: -40px;
 	color: white;
 	font-weight: 700;
 	font-size: 13px;
+
 
 }
 

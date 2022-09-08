@@ -28,3 +28,16 @@
 	max-width: 120px;
 	max-height: 40px;
 }
+.teamSmall{
+		display: none;
+	}
+
+@media(max-width:600px){
+	.teamSmall{
+		margin-top: 40px;
+		display: flex;
+	}
+	.teamBig{
+		display: none;
+	}
+}

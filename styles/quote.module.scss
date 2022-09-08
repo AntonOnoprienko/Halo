@@ -38,3 +38,23 @@ background: url('/bcg.png') 0 0/100% no-repeat;
 	line-height: 20px;
 	margin-left: 20px;
 }
+
+@media(max-width: 1050px){
+	.quote__wrapper{
+		margin: 0 0 100px 0;
+		padding: 0;
+	}
+	.text{
+	font-size: 40px;
+
+}
+}
+@media(max-width: 599.98px){
+.items{
+	display: flex;
+	flex-direction: column;
+}
+.item{
+margin: 10px 0;
+}
+}
