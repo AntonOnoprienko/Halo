@@ -12,3 +12,19 @@
 .header {
 	background-color: #F7F3F4;
 } 
+
+.carousel{
+	display: inherit;
+}
+.workaround{
+	display: none;
+}
+
+@media(max-width:599.95px){
+	.workaround{
+	display: inherit;
+}
+.carousel{
+	display: none;
+}
+}

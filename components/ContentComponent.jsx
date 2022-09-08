@@ -12,8 +12,17 @@ import { FooterComponent } from './FooterComponent'
 import { СarouselComponent } from './carousel/СarouselComponent'
 
 
+
 import Head from 'next/head'
+import { useScrollhook } from '../hooks/scrollhooks'
+import { Workaround } from './carousel/CarouselWorkaround'
 export const ContentComponent = () => {
+
+	const {refHome,
+    	refOurMission,
+    	refPlaces,
+		refTeam,
+	refWorkaround} = useScrollhook()
 	return (
 		<>
 		<Head>
@@ -25,22 +34,23 @@ export const ContentComponent = () => {
 				
 				<div className={classes.header}>
 					<div className='__container'>
-					<HeaderComponent/>
-					<FirstPageComponent />
+						<HeaderComponent home={refHome} mission={refOurMission} places={refPlaces} team={refTeam} work={refWorkaround} />
+						<div ref={refHome}><FirstPageComponent /></div>
 					</div>
 				</div>
 				
 			<main>
 				<div className={'__container'}>
 					<NewsComponent />
-					<SliderComponent />
-					<TeamComponent />
+						<div ref={refPlaces}><SliderComponent /></div>
+						<div ref={refTeam}><TeamComponent /></div>
 					<QuoteComponent />
 					<ContactComponent />
 					<FaqsComponent />
 				</div>
 				<div className={classes.bcg}>
-				<СarouselComponent />
+						<div ref={refOurMission} className={classes.carousel}><СarouselComponent /></div>
+						<div ref={refWorkaround} className={classes.workaround}><Workaround /></div>
 				</div>
 			</main>
 				

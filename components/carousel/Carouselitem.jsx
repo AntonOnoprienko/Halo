@@ -7,7 +7,7 @@ import classes from '../../styles/carousel.module.scss'
 
 
 export const CarouselItem = ({ children }) => {
-	const PAGE_WIDTH = 300
+	const PAGE_WIDTH = 270
 	const [pages, setPages] = useState([])
 	const [offset, setOffset] = useState(0)
 	const [counter, setCounter] = useState(3)
@@ -25,9 +25,7 @@ export const CarouselItem = ({ children }) => {
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'center',
-						flex: '1 0 20%',
-						minWidth: '300px',
-						border: '1px solid purple',
+						minWidth: PAGE_WIDTH,
 
 					},
 				}) 
@@ -46,7 +44,7 @@ export const CarouselItem = ({ children }) => {
 		setOffset((currentOffset) => { 
 			const newOffset = currentOffset + PAGE_WIDTH
 			console.log(newOffset)
-			return Math.min(newOffset,600)
+			return Math.min(newOffset,PAGE_WIDTH * 2)
 		})
 	}
 	const handlerRightArrowClick = () => {
@@ -59,7 +57,7 @@ export const CarouselItem = ({ children }) => {
 		})
 		setOffset((currentOffset) => {
 			const newOffset = currentOffset - PAGE_WIDTH
-			return Math.max(newOffset,-600)
+			return Math.max(newOffset,-(PAGE_WIDTH*2))
 		})
 	 }
 
