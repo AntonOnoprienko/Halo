@@ -18,7 +18,7 @@ export const HeaderComponent = (props) => {
 		<>
 		<div className={classes.header__wrapper}>
 
-			<Image src='/logo.png' alt='logo' width='110px' height='37px' />
+			<Image src='/logotype.png' alt='logo' width='110px' height='37px' />
 
 			<div className={classes.header__menu_items}>
 					<b><span onClick={() => { scrolToSection(props.home) }}>Home</span></b>

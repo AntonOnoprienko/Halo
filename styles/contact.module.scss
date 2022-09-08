@@ -133,5 +133,7 @@ margin: 8px 0;
 		@include size(63px,72px);
 		margin: -360px -330px 0 0;
 	}
-
+	.button {
+		min-width: 50px;
+	}
 }
