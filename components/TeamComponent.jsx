@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import teamSmall from '../public/teamSmall.png'
 import classes from '../styles/team.module.scss'
 
 
@@ -16,7 +15,7 @@ export const TeamComponent = () => {
 			  <Image src={'/team.png'} alt={'teamBig'} width={1120} height={435}/>
 		  </div>
 		  <div className={classes.teamSmall}>
-			  <Image src={teamSmall} alt={'teamSmall'} width={350} height={605} placeholder='blur'  />
+			  <Image src={'/teamSmall.png'} alt={'teamSmall'} width={350} height={605} />
 			  </div>
 	  </div>
   )
