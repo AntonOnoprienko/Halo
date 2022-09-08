@@ -26,12 +26,11 @@ export const CarouselItem = ({ children }) => {
 						alignItems: 'center',
 						justifyContent: 'center',
 						minWidth: PAGE_WIDTH,
-
 					},
 				}) 
 			} )
 		)
-	},[])
+	},[children])
 
 	const handlerLeftArrowClick = () => { 
 		setCounter((currentCounter) => {
