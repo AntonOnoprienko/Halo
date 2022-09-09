@@ -42,7 +42,6 @@ export const CarouselItem = ({ children }) => {
 		})
 		setOffset((currentOffset) => { 
 			const newOffset = currentOffset + PAGE_WIDTH
-			console.log(newOffset)
 			return Math.min(newOffset,PAGE_WIDTH * 2)
 		})
 	}

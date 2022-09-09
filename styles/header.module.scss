@@ -13,6 +13,12 @@
 	justify-content: space-between;
 	min-width: 33%;
 	font-size: 16px;
+		li{
+			&:hover{
+				background-color: 222433 ;
+				text-decoration:underline;
+	}
+		}
 }
 .header__button{
 	display: flex;
@@ -56,6 +62,10 @@
 	box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
 	border-radius: 40px;
 }
+
+
+
+
 @media(max-width: 859.99px){
 	.header__menu_items{
 		width: 100%;
