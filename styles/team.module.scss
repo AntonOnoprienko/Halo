@@ -31,6 +31,9 @@
 .teamSmall{
 		display: none;
 	}
+.teamBig {
+	display: inherit;
+}
 
 @media(max-width:600px){
 	.teamSmall{
