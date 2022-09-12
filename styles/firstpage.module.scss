@@ -1,19 +1,19 @@
 
-.firstPage{
+.titlePage{
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 125px;
 }
 
-.left_block {
+.titlePage__leftBlock {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 	padding-top: 128px;
 }
-.right_block{
+.titlePage__rightBlock{
 	width: 50%;
 	height: 100%;
 	margin-top: 67px;
@@ -21,26 +21,21 @@
 }
 
 
-.left_block_img{
+.titlePage__headlineImg{
 	max-width: 543px;
 	max-height: 290px;
 }
 
 
-.firstPage__rightSide_parrot{
-margin-right: -40px;
-}
 
-
-
-.firstPage__text {
+.titlePage__text {
 	padding: 45px 0;
 	font-size: 16px;
 	line-height: 32px;
 	max-width: 450px;
 	
 }
-.firstPage__target_button_wrapper {
+.titlePage__searchform {
 	max-width: 448px;
 	max-height: 64px;
 	padding: 15px 10px 15px 20px; 
@@ -50,14 +45,14 @@ margin-right: -40px;
 	display: flex;
 	align-items: center;
 }
-.firstPage__target_button_text{
+.titlePage__buttonText{
 	flex-basis: 70%;
 	font-size: 14px;
 	color: #807C7C;
 	display: flex;
 	align-items: center;
 }
-.firstPage__target_button{
+.titlePage__searchButton{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -73,41 +68,45 @@ margin-right: -40px;
 }
 
 @media (min-width:1250.98px) {
-	.right_block {
+	.titlePage__rightBlock {
 		margin-right: -100px;
 	} 
 }
 
 @media(max-width: 599.99px){
-	.firstPage{
+	.titlePage{
 		display: flex;
 		flex-direction: column;
 		padding: 0 20px;
 	}
-	.left_block{
+	.titlePage__leftBlock{
 		padding-top: 70px;
 		width: auto;
 
 	}
-	.right_block{
+	.titlePage__rightBlock{
 		width: 150%;
 		overflow: hidden;
 		padding: 0;
 	}
-	.firstPage__text{
+	.titlePage__text{
 		padding-top: 30px 0 40px;
 	}
-	.firstPage__target_button_wrapper {
+	.titlePage__searchform {
 	max-width: 340px;
 	max-height: 65px;
 	display: flex;
 	flex-direction: initial;
 	border-radius: 40px;	
 }
-.firstPage__target_button_text{
+.titlePage__buttonText{
 	display: flex;
 	flex-direction: initial;
 
 }
 }
+
+
+
+
 

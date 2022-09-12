@@ -18,7 +18,7 @@ export const HeaderComponent = ({home,mission,places,team,work}) => {
 				<h1 className='invisible'>Header</h1>
 				<a href="#"><Image src='/logotype.png' alt='logotype' width='110px' height='37px' /></a>
 			<ul className={classes.header__menu_items}>
-					<li onClick={() => { scrolToSection(home) }}><b>Home</b></li>
+					<li onClick={() => { scrolToSection(home) }}>Home</li>
 					<li onClick={() => { scrolToSection(mission) }}>Our mission</li>
 					<li onClick={() => { scrolToSection(places) }}>Places</li>
 					<li onClick={() => { scrolToSection(team)}}>Team</li>	
